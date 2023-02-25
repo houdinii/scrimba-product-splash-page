@@ -8,6 +8,22 @@ body {
     color: #404040;
     margin: 0;
 }
+
+section{
+    margin: 0;
+}
+/*endregion*/
+
+/* region -----Colors-----*/
+
+*{
+    --thistle: #cdb4dbff;
+    --fairy-tale: #ffc8ddff;
+    --carnation-pink: #ffafccff;
+    --uranian-blue: #84C7FFff;
+    --light-sky-blue: #4F779Eff;
+}
+
 /*endregion*/
 
   /* region -----Typography-----*/
@@ -27,7 +43,7 @@ body {
 h1 {
     font-size: 2.5rem;
     font-weight: 400;
-    text-shadow: 0 2px #816fca;
+    text-shadow: 0 2px 2px #5e8ab7;
 }
 
 h2 {
@@ -43,6 +59,8 @@ p{
 .beta-text {
     order: 1;
     font-weight: 900;
+    overflow: hidden;
+    padding-bottom: 0.5em;
 }
 
 .subheading {
@@ -111,7 +129,7 @@ p{
     justify-content: space-between;
     text-align: center;
     color: #fff;
-    background: #9480e4 url("images/intro-bg.png");
+    background: var(--light-sky-blue) url("images/intro-bg-blue.png");
     background-size: cover;
 }
 /*endregion*/
@@ -182,7 +200,7 @@ input{
 }
 input:focus{
     outline: none;
-    border-color: #8a71ec;
+    border-color: var(--light-sky-blue);
     background-color: #e6e8ec;
 }
 
@@ -196,11 +214,11 @@ input:focus{
     cursor: pointer;
 }
 .btn-primary:hover, .btn-primary:focus{
-    background-color: #b7a7f6;
+    background-color:var(--uranian-blue);
 }
 
 .btn-primary{
-    background-color: #8a71ec;
+    background-color: var(--light-sky-blue);
     color: white;
     margin-top: 1em;
 }
